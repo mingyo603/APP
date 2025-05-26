@@ -15,7 +15,7 @@ class Blog(models.Model):
     user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     # 5. 본문
     body = models.TextField()
-
+# test
 # 이미지 업로드 경로 지정 함수
 def blog_image_upload_path(instance, filename):
     return f'blog/{instance.blog.id}/{filename}'
